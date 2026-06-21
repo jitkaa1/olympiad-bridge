@@ -21,6 +21,7 @@ function sendMail() {
     })
     .catch(function(error) {
         console.error(error);
+        console.log(document.getElementById("contact-form"));
         alert("Failed to send email.");
     });
 }
