@@ -48,103 +48,111 @@
 								<h2 class="major">Problems</h2>
 								
 								<p>Here you can find problems in Physics and Chemistry ranging from beginner to the olympiad level.</p>
-								<h3>PHYSICS</h3>
-								<nav>
-									<ul style = "list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px">
-										<li><a href="#beginnerphysics" style = "--clr:#3EF71E"><button type="button" class="custom-btn"><span>Beginner</span><i></i></button></a></li>
-										<li><a href="#intermediatephysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Intermediate</span><i></i></button></a></li>
-										<li><a href="#advancedphysics" style = "--clr:#FCFCFC"><button type="button" class="custom-btn"><span>Advanced</span><i></i></button></a></li>
-										<li><a href="#expertphysics" style = "--clr:#EAFF00"><button type="button" class="custom-btn"><span>Expert</span><i></i></button></a></li>
-										<li><a href="#olympianphysics" style = "--clr:#CC0000"><button type="button" class="custom-btn"><span>Olympian</span><i></i></button></a></li>
-									</ul>
-					
-									<style>
-										
-  										.custom-btn {
-											position: relative;
-											text-decoration: none;
-											text-transform: uppercase;
-											
-											width: 200px;
-											height: 50px;
-											
-											display: flex;
-  											justify-content: center;
-  											align-items: center;
-    										background: #9E9C9B;
-    										color: white;
-    										padding: 7px 14px;
-    										cursor: pointer;
-											transition: 0.5s;
-											letter-spacing: 0.1em;
-						
-  											}
-  										.custom-btn:hover {
-											transform: scale(1.1);
-    										background: var(--clr);
-											color: var(--clr);
-											letter-spacing: 0.25em;
-											box-shadow: 0 0 35px var(--clr);
-  										}
-										.custom-btn:before{
-											content: '';
-											position: absolute;
-											inset: 2px;
-											background: #27282c;
-										}
-										.custom-btn span{
-											position: relative;
-											z-index: 1;
-										}
-										.custom-btn i{
-											position: absolute;
-											inset: 0;
-											display: block;
-										}
-										.custom-btn i::before{
-											content: '';
-											position: absolute;
-											top: 0;
-											left: 80%;
-											width: 10px;
-											height: 4px;
-											background: #27282c;
-											transform: translateX(-50%) skewX(325deg); 
-											transition: 0.7s;
-										}
-										.custom-btn:hover i::before{
-											width: 20px;
-											left: 20%;
-										}
-										.custom-btn i::after{
-											content: '';
-											position: absolute;
-											bottom: 0;
-											left: 20%;
-											width: 10px;
-											height: 4px;
-											background: #27282c;
-											transform: translateX(-50%) skewX(325deg); 
-											transition: 0.5s;
-										}
-										.custom-btn:hover i::after{
-											width: 20px;
-											left: 80%;
-										}
-											
-									</style>
+								<div class="subject-container">
 									
-								</nav>
-								<h3>CHEMISTRY</h3>
-								<nav>
-									<ul style = "list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px">
-										<li><a href="#beginnerphysics" style = "--clr:#3EF71E"><button type="button" class="custom-btn"><span>Beginner</span><i></i></button></a></li>
-										<li><a href="#intermediatephysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Intermediate</span><i></i></button></a></li>
-										<li><a href="#advancedphysics" style = "--clr:#FCFCFC"><button type="button" class="custom-btn"><span>Advanced</span><i></i></button></a></li>
-										<li><a href="#expertphysics" style = "--clr:#EAFF00"><button type="button" class="custom-btn"><span>Expert</span><i></i></button></a></li>
-										<li><a href="#olympianphysics" style = "--clr:#CC0000"><button type="button" class="custom-btn"><span>Olympian</span><i></i></button></a></li>
-									</ul>
-								</nav>
+									<div class="subject-block">
+									
+										<h3>PHYSICS</h3>
+										<nav>
+											<ul style = "list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px">
+												<li><a href="#beginnerphysics" style = "--clr:#3EF71E"><button type="button" class="custom-btn"><span>Beginner</span><i></i></button></a></li>
+												<li><a href="#intermediatephysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Intermediate</span><i></i></button></a></li>
+												<li><a href="#advancedphysics" style = "--clr:#FCFCFC"><button type="button" class="custom-btn"><span>Advanced</span><i></i></button></a></li>
+												<li><a href="#expertphysics" style = "--clr:#EAFF00"><button type="button" class="custom-btn"><span>Expert</span><i></i></button></a></li>
+												<li><a href="#olympianphysics" style = "--clr:#CC0000"><button type="button" class="custom-btn"><span>Olympian</span><i></i></button></a></li>
+											</ul>
+					
+											<style>
+										
+  												.custom-btn {
+													position: relative;
+													text-decoration: none;
+													text-transform: uppercase;
+											
+													width: 200px;
+													height: 50px;
+											
+													display: flex;
+  													justify-content: center;
+  													align-items: center;
+    												background: #9E9C9B;
+    												color: white;
+    												padding: 7px 14px;
+    												cursor: pointer;
+													transition: 0.5s;
+													letter-spacing: 0.1em;
+						
+  													}
+  												.custom-btn:hover {
+													transform: scale(1.1);
+    												background: var(--clr);
+													color: var(--clr);
+													letter-spacing: 0.25em;
+													box-shadow: 0 0 35px var(--clr);
+  												}	
+												.custom-btn:before{
+													content: '';
+													position: absolute;
+													inset: 2px;
+													background: #27282c;
+												}	
+												.custom-btn span{
+													position: relative;
+													z-index: 1;
+												}
+												.custom-btn i{
+													position: absolute;
+													inset: 0;
+													display: block;
+												}
+												.custom-btn i::before{
+													content: '';
+													position: absolute;
+													top: 0;
+													left: 80%;
+													width: 10px;
+													height: 4px;
+													background: #27282c;
+													transform: translateX(-50%) skewX(325deg); 
+													transition: 0.7s;
+												}
+												.custom-btn:hover i::before{
+													width: 20px;
+													left: 20%;
+												}
+												.custom-btn i::after{
+													content: '';
+													position: absolute;
+													bottom: 0;
+													left: 20%;
+													width: 10px;
+													height: 4px;
+													background: #27282c;
+													transform: translateX(-50%) skewX(325deg); 
+													transition: 0.5s;
+												}
+												.custom-btn:hover i::after{
+													width: 20px;
+													left: 80%;
+												}
+											
+											</style>
+									
+										</nav>
+									</div>
+									<div class = "subject-block">
+										<h3>CHEMISTRY</h3>
+										<nav>
+											<ul style = "list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px">
+												<li><a href="#beginnerphysics" style = "--clr:#3EF71E"><button type="button" class="custom-btn"><span>Beginner</span><i></i></button></a></li>
+												<li><a href="#intermediatephysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Intermediate</span><i></i></button></a></li>
+												<li><a href="#advancedphysics" style = "--clr:#FCFCFC"><button type="button" class="custom-btn"><span>Advanced</span><i></i></button></a></li>
+												<li><a href="#expertphysics" style = "--clr:#EAFF00"><button type="button" class="custom-btn"><span>Expert</span><i></i></button></a></li>
+												<li><a href="#olympianphysics" style = "--clr:#CC0000"><button type="button" class="custom-btn"><span>Olympian</span><i></i></button></a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
 							</article>
 							<article id = "beginnerphysics">
 								<a href="#intro" class="icon fa-arrow-left"></a>
@@ -156,6 +164,18 @@
     										left: 20px;
     										z-index: 100;
 										}
+									.subject-container{
+										display:flex;
+										justify-content: center;
+										gap: 75px;
+										align-items: flex-start;
+										flex-wrap: wrap;
+									}
+									.subject-block{
+										display: flex;
+										flex-direction: column;
+										align-items: center;
+									}
 								</style>
 							</article>
 							<article id = "intermediatephysics">
