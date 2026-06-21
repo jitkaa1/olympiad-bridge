@@ -51,7 +51,7 @@
 								<h3>PHYSICS</h3>
 								<nav>
 									<ul style = "list-style-type: none; padding: 0; margin: 0;">
-										<li><a href="#beginnerphysics"><button type="button" class="custom-btn">Beginner</button></a></li>
+										<li><a href="#beginnerphysics" style = "--clr:#le9bff"><button type="button" class="custom-btn">Beginner</button></a></li>
 										<li><a href="#intermediatephysics"><button type="button" class="custom-btn">Intermediate</button></a></li>
 										<li><a href="#advancedphysics"><button type="button" class="custom-btn">Advanced</button></a></li>
 										<li><a href="#expertphysics"><button type="button" class="custom-btn">Expert</button></a></li>
@@ -60,7 +60,9 @@
 					
 									<style>
   										.custom-btn {
-											gap: 12px;
+											padding-left: 0; 
+											margin-left: 0;
+											gap: 20px;
 											width: 200px;
 											height: 50px;
 											display: inline-flex;
@@ -70,11 +72,14 @@
     										color: white;
     										padding: 7px 14px;
     										border: none;
-    										border-radius: 3px;
+    										border-radius: 12px;
     										cursor: pointer;
+											transition: 0.5s;
   											}
   										.custom-btn:hover {
-    										background-color: #E80909;
+    										background: var(--clr);
+											letter-spacing: 0.25em;
+											box-shadow: 0 0 35px var(--clr);
   										}
 									</style>
 									
