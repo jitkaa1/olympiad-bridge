@@ -1,9 +1,26 @@
-function sendMail(){
-  let parms = {
-    name : document.getElementById("name").value, 
-    email : document.getElementById("email").value, 
-    message : document.getElementById("message").value, 
-  }
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    sendMail();
+});
 
-  emailjs.send("service_wl5a0ak","template_9exyt7s",parms).then(alert("Email Sent!"))
+function sendMail() {
+    const params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send(
+        "service_wl5a0ak",
+        "template_9exyt7s",
+        params
+    )
+    .then(function(response) {
+        console.log(response);
+        alert("Email Sent!");
+    })
+    .catch(function(error) {
+        console.error(error);
+        alert("Failed to send email.");
+    });
 }
