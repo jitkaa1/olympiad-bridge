@@ -50,7 +50,7 @@
 								<p>Here you can find problems in Physics and Chemistry ranging from beginner to the olympiad level.</p>
 								<h3>PHYSICS</h3>
 								<nav>
-									<ul style = "list-style-type: none; padding: 0; margin: 0;">
+									<ul style = "list-style-type: none; padding-left: 0; margin-left: 0; flex-direction: column; gap: 25px">
 										<li><a href="#beginnerphysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn">Beginner</button></a></li>
 										<li><a href="#intermediatephysics"><button type="button" class="custom-btn">Intermediate</button></a></li>
 										<li><a href="#advancedphysics"><button type="button" class="custom-btn">Advanced</button></a></li>
@@ -60,13 +60,13 @@
 					
 									<style>
   										.custom-btn {
-											padding-left: 0; 
-											margin-left: 0;
-											flex-direction: column;
-											gap: 25px;
+											position: relative;
+											text-decoration: none;
+											text-transform: uppercase;
+											
 											width: 200px;
 											height: 50px;
-											display: inline-flex;
+											
   											justify-content: center;
   											align-items: center;
     										background: #9E9C9B;
@@ -84,7 +84,12 @@
 											letter-spacing: 0.25em;
 											box-shadow: 0 0 35px var(--clr);
   										}
-										
+										.custom-btn: before{
+											content: '';
+											position: absolute;
+											inset: 2px;
+											background: #27282c;
+										}
 											
 									</style>
 									
