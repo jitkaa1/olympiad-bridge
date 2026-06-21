@@ -51,7 +51,7 @@
 								<h3>PHYSICS</h3>
 								<nav>
 									<ul style = "list-style-type: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 25px">
-										<li><a href="#beginnerphysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Beginner</span></button></a></li>
+										<li><a href="#beginnerphysics" style = "--clr:#1e9bff"><button type="button" class="custom-btn"><span>Beginner</span><i></i></button></a></li>
 										<li><a href="#intermediatephysics"><button type="button" class="custom-btn">Intermediate</button></a></li>
 										<li><a href="#advancedphysics"><button type="button" class="custom-btn">Advanced</button></a></li>
 										<li><a href="#expertphysics"><button type="button" class="custom-btn">Expert</button></a></li>
@@ -81,6 +81,7 @@
   										.custom-btn:hover {
 											transform: scale(1.1);
     										background: var(--clr);
+											color: var(--clr);
 											letter-spacing: 0.25em;
 											box-shadow: 0 0 35px var(--clr);
   										}
@@ -93,6 +94,41 @@
 										.custom-btn span{
 											position: relative;
 											z-index: 1;
+										}
+										.custom-btn i{
+											position: absolute;
+											inset: 0;
+											display: block;
+										}
+										.custom-btn:: before{
+											content: '';
+											position: absolute;
+											top: 0;
+											left: 80%;
+											width: 10px;
+											height: 4px;
+											background: #27282c;
+											transform: translateX(-50%) skewX(325deg); 
+											transition: 0.7s;
+										}
+										.custom-btn: hover i::before{
+											width: 20px;
+											left: 20%;
+										}
+										.custom-btn:: after{
+											content: '';
+											position: absolute;
+											bottom: 0;
+											left: 20%;
+											width: 10px;
+											height: 4px;
+											background: #27282c;
+											transform: translateX(-50%) skewX(325deg); 
+											transition: 0.5s;
+										}
+										.custom-btn: hover i::after{
+											width: 20px;
+											left: 80%;
 										}
 											
 									</style>
