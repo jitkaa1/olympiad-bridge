@@ -20,8 +20,8 @@ function sendMail() {
         alert("Email Sent!");
     })
     .catch(function(error) {
-        console.error(error);
-        console.log(document.getElementById("contact-form"));
-        alert("Failed to send email.");
+        console.log(error.status);
+        console.log(error.text);
+        console.log(error);
     });
 }
